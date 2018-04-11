@@ -14,7 +14,13 @@ const randomIntInclusive = (min, max) => {
 	return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
+const randomString = () =>
+	Math.random()
+		.toString(36)
+		.slice(2, randomIntInclusive(2, 10))
+
 module.exports = {
 	times,
 	randomIntInclusive,
+	randomString,
 }

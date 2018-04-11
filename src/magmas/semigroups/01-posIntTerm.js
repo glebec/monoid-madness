@@ -64,7 +64,7 @@ const { expect } = require('chai')
 
 describe('PosIntTerm', () => {
 	describe('instance method `add`', () => {
-		it('adds two PosIntTerms, yielding a new PosIntTerm', () => {
+		it('adds two PosIntTerms', () => {
 			const t1 = PosIntTerm.of(1)
 			const t2 = PosIntTerm.of(2)
 			const t1t2 = t1.add(t2)

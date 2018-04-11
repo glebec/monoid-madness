@@ -16,7 +16,7 @@ const testSemigroup = (Entity, opName) => {
 	describe(`💕 (${setName} & binary operation \`${opName}\`) as a semigroup:`, () => {
 		testMagma(Entity, opName)
 
-		it(`\`${opName}\` is associative ((x ${opName} y) ${opName} z = x ${opName} (y ${opName} z))`, () => {
+		it(`\`${opName}\` seems to be associative ((x ${opName} y) ${opName} z = x ${opName} (y ${opName} z))`, () => {
 			times(STOCHASTIC_LIMIT_EXCLUSIVE, () => {
 				const entity1 = Entity.makeRandom()
 				const entity2 = Entity.makeRandom()

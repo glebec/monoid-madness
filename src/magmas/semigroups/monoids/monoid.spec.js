@@ -16,7 +16,7 @@ const testMonoid = (Entity, opName) => {
 	describe(`💘 (${setName} & binary operation \`${opName}\`) as a monoid:`, () => {
 		testSemigroup(Entity, opName)
 
-		it(`has an identity element I (x ${opName} I = x = I ${opName} x)`, () => {
+		it(`seems to have an identity element I (x ${opName} I = x = I ${opName} x)`, () => {
 			expect(Entity).to.have.property('identity')
 			const id = Entity.identity
 			times(STOCHASTIC_LIMIT_EXCLUSIVE, () => {

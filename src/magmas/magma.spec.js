@@ -16,7 +16,7 @@ const testMagma = (Entity, opName) => {
 	const setNames = pluralize(setName)
 
 	describe(`💝 (${setName} & binary operation \`${opName}\`) as a magma:`, () => {
-		it(`\`${opName}\` is closed (if x and y are ${setNames}, then (x ${opName} y) is also ${a(
+		it(`\`${opName}\` seems to be closed (if x and y are ${setNames}, then (x ${opName} y) is also ${a(
 			setName,
 		)})`, () => {
 			times(STOCHASTIC_LIMIT_EXCLUSIVE, () => {
